@@ -1,0 +1,251 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>SUGESTAO.sikuli</h2> <a href="SUGESTAO.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># SUGESTAO PADRAO</span>
+
+<span class="kw">def</span> endereco():
+    <span class="kw">if</span>(exists(<img src="1537836711054-8.png" />)):
+        <span class="skw">click</span>(<img src="1537836711054-8.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1537837616092-8.png" />)
+        <span class="skw">click</span>(<img src="1537837616092-8.png" />)
+    <span class="skw">find</span>(<img src="1536792463168-11.png" />)
+    <span class="skw">type</span>(<span class="str">'localhost'</span>)
+    <span class="kw">def</span> typeSlash():
+        keyDown(Key.ALT)
+        <span class="skw">type</span>(Key.NUM4+Key.NUM7)
+        keyUp()
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'projeto'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'sugestao'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'cadastrar'</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+
+endereco()
+
+<span class="skw">find</span>(<img src="1536792680544.png" />)
+<span class="skw">click</span>(<img src="1536792680544.png" />)
+<span class="skw">type</span>(<span class="str">'Spock'</span>)
+<span class="skw">find</span>(<img src="1536792667843.png" />)
+<span class="skw">click</span>(<img src="1536792667843.png" />)
+<span class="skw">type</span>(<span class="str">'spock@enterprise1701.uss'</span>)
+<span class="skw">find</span>(<img src="1536792749488.png" />)
+<span class="skw">click</span>(<img src="1536792749488.png" />)
+<span class="skw">type</span>(<span class="str">'Nao digitar acentos eh ilogico.'</span>)
+<span class="skw">find</span>(<img src="1536800656068.png" />)
+<span class="skw">click</span>(<img src="1536800656068.png" />)
+
+<span class="kw">def</span> word(teste):
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.PRINTSCREEN)
+    <span class="kw">if</span>(exists(<img src="1536795174517-11.png" />)):
+        <span class="skw">click</span>(<img src="1536795174517-11.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1538440425431-6.png" />)
+        <span class="skw">click</span>(<img src="1538440425431-6.png" />)
+        <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">wait</span>(<img src="1537835985449-11.png" />)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'sugestao '</span>+ teste + Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+    <span class="skw">find</span>(<img src="1537404525832-12.png" />)
+    <span class="skw">click</span>(<img src="1537404525832-12.png" />)
+
+teste = <span class="str">'padrao'</span>
+word(teste)
+
+
+<span class="cmt"># DESCRICAO</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1536792680544-1.png" />)
+<span class="skw">click</span>(<img src="1536792680544-1.png" />)
+<span class="skw">type</span>(<span class="str">'Spock'</span>)
+<span class="skw">find</span>(<img src="1536792667843-1.png" />)
+<span class="skw">click</span>(<img src="1536792667843-1.png" />)
+<span class="skw">type</span>(<span class="str">'spock@enterprise1701.uss'</span>)
+<span class="skw">find</span>(<img src="1536792749488-1.png" />)
+<span class="skw">click</span>(<img src="1536792749488-1.png" />)
+<span class="skw">type</span>(<span class="str">','</span>, Key.SHIFT)
+<span class="skw">find</span>(<img src="1536800656068-1.png" />)
+<span class="skw">click</span>(<img src="1536800656068-1.png" />)
+
+teste = <span class="str">'descricao com caracteres especiais'</span>
+word(teste)
+
+
+<span class="cmt"># EMAIL</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1536792680544-2.png" />)
+<span class="skw">click</span>(<img src="1536792680544-2.png" />)
+<span class="skw">type</span>(<span class="str">'Spock'</span>)
+<span class="skw">find</span>(<img src="1536792667843-2.png" />)
+<span class="skw">click</span>(<img src="1536792667843-2.png" />)
+<span class="skw">type</span>(<span class="str">'spock.enterprise1701.uss'</span>)
+<span class="skw">find</span>(<img src="1536792749488-2.png" />)
+<span class="skw">click</span>(<img src="1536792749488-2.png" />)
+<span class="skw">type</span>(<span class="str">'Nao digitar acentos eh ilogico.'</span>)
+<span class="skw">find</span>(<img src="1536800656068-2.png" />)
+<span class="skw">click</span>(<img src="1536800656068-2.png" />)
+
+teste = <span class="str">'email'</span>
+word(teste)
+
+
+<span class="cmt"># NOME NUMEROS</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1536792680544-3.png" />)
+<span class="skw">click</span>(<img src="1536792680544-3.png" />)
+<span class="skw">type</span>(<span class="str">'123'</span>)
+<span class="skw">find</span>(<img src="1536792667843-3.png" />)
+<span class="skw">click</span>(<img src="1536792667843-3.png" />)
+<span class="skw">type</span>(<span class="str">'spock@enterprise1701.uss'</span>)
+<span class="skw">find</span>(<img src="1536792749488-3.png" />)
+<span class="skw">click</span>(<img src="1536792749488-3.png" />)
+<span class="skw">type</span>(<span class="str">'Nao digitar acentos eh ilogico.'</span>)
+<span class="skw">find</span>(<img src="1536800656068-3.png" />)
+<span class="skw">click</span>(<img src="1536800656068-3.png" />)
+
+teste = <span class="str">'nome com numeros'</span>
+word(teste)
+
+
+<span class="cmt"># NOME CARACTERES ESPECIAIS</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1536792680544-3.png" />)
+<span class="skw">click</span>(<img src="1536792680544-3.png" />)
+<span class="skw">type</span>(<span class="str">','</span>, Key.SHIFT)
+<span class="skw">find</span>(<img src="1536792667843-3.png" />)
+<span class="skw">click</span>(<img src="1536792667843-3.png" />)
+<span class="skw">type</span>(<span class="str">'spock@enterprise1701.uss'</span>)
+<span class="skw">find</span>(<img src="1536792749488-3.png" />)
+<span class="skw">click</span>(<img src="1536792749488-3.png" />)
+<span class="skw">type</span>(<span class="str">'Nao digitar acentos eh ilogico.'</span>)
+<span class="skw">find</span>(<img src="1536800656068-3.png" />)
+<span class="skw">click</span>(<img src="1536800656068-3.png" />)
+
+teste = <span class="str">'nome com caracteres especiais'</span>
+word(teste)
+
+
+<span class="cmt"># VOLTAR</span>
+
+endereco()
+
+<span class="skw">find</span>(<img src="1536792680544-4.png" />)
+<span class="skw">click</span>(<img src="1536792680544-4.png" />)
+<span class="skw">type</span>(<span class="str">'Spock'</span>)
+<span class="skw">find</span>(<img src="1536792667843-4.png" />)
+<span class="skw">click</span>(<img src="1536792667843-4.png" />)
+<span class="skw">type</span>(<span class="str">'spock@enterprise1701.uss'</span>)
+<span class="skw">find</span>(<img src="1536792749488-4.png" />)
+<span class="skw">click</span>(<img src="1536792749488-4.png" />)
+<span class="skw">type</span>(<span class="str">'Nao digitar acentos eh ilogico.'</span>)
+<span class="skw">find</span>(<img src="1536798681943.png" />)
+<span class="skw">click</span>(<img src="1536798681943.png" />)
+
+teste = <span class="str">'voltar ao login'</span>
+word(teste)
+
+<span class="skw">click</span>(<img src="1536795174517-13.png" />)
+
+<span class="skw">find</span>(<img src="1538229390137-1.png" />)
+<span class="skw">click</span>(<img src="1538229390137-1.png" />)
+<span class="skw">find</span>(<img src="1538229412402-1.png" />)
+<span class="skw">doubleClick</span>(<img src="1538229412402-1.png" />)
+<span class="skw">find</span>(<img src="1539650165371.png" />)
+<span class="skw">click</span>(<img src="1539650165371.png" />)
+<span class="skw">find</span>(<img src="1538229509689-1.png" />)
+<span class="skw">click</span>(<img src="1538229509689-1.png" />)
+<span class="skw">type</span>(<span class="str">'sugestao testes'</span>)
+<span class="skw">find</span>(<img src="1538229537023-1.png" />)
+<span class="skw">click</span>(<img src="1538229537023-1.png" />)
+<span class="skw">find</span>(<img src="1538229937734-1.png" />)
+<span class="skw">click</span>(<img src="1538229937734-1.png" />)
+</pre>
+</body>
+</html>
