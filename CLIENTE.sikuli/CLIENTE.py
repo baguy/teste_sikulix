@@ -23,7 +23,6 @@ def endereco():
 
 endereco()
 
-wait("1534200908250.png")
 find("1534200917845.png")
 click("1534200917845.png")
 type('Maria')
@@ -79,7 +78,6 @@ word(teste)
 
 endereco()
 
-wait("1534200908250-1.png")
 find("1534200917845-1.png")
 click("1534200917845-1.png")
 type('Maria')
@@ -115,7 +113,6 @@ word(teste)
 
 endereco()
 
-wait("1534200908250-2.png")
 find("1534200917845-2.png")
 click("1534200917845-2.png")
 type('Maria')
@@ -154,7 +151,6 @@ word(teste)
 
 endereco()
 
-wait("1534200908250-3.png")
 find("1534200917845-3.png")
 click("1534200917845-3.png")
 type('Aragon')
@@ -194,7 +190,7 @@ word(teste)
 endereco()
 
 sleep(2)
-wait("1534200908250-4.png")
+
 find("1534200917845-4.png")
 click("1534200917845-4.png")
 type('Aragon')
@@ -233,7 +229,6 @@ word(teste)
 
 endereco()
 
-wait("1534200908250-5.png")
 find("1534200917845-5.png")
 click("1534200917845-5.png")
 type('Aragon')
@@ -272,8 +267,7 @@ word(teste)
 
 endereco()
 
-sleep(2)
-wait("1534200908250-6.png")
+
 find("1534200917845-6.png")
 click("1534200917845-6.png")
 type('Gwendolyn')
@@ -312,7 +306,6 @@ word(teste)
 
 endereco()
 
-wait("1534200908250-7.png")
 find("1534200917845-7.png")
 click("1534200917845-7.png")
 type('123')
@@ -351,7 +344,6 @@ word(teste)
 
 endereco()
 
-wait("1534200908250-8.png")
 find("1534200917845-8.png")
 click("1534200917845-8.png")
 type('Aragon')

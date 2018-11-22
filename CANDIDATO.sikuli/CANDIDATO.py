@@ -321,6 +321,7 @@ def enderecoLista():
     typeSlash()
     type('candidato')
     type(Key.DELETE)
+    type(Key.ENTER)
     sleep(2)
 
 enderecoLista()

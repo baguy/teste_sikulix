@@ -72,27 +72,28 @@
 <pre class="sikuli-code">
 <span class="cmt"># PRODUTO PADRÃO</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-10.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-10.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-10.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-10.png" />)
-<span class="skw">find</span>(<img src="1536792463168.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="kw">def</span> endereco():
+    <span class="kw">if</span>(exists(<img src="1537836711054-10.png" />)):
+        <span class="skw">click</span>(<img src="1537836711054-10.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1537837616092-10.png" />)
+        <span class="skw">click</span>(<img src="1537837616092-10.png" />)
+    <span class="skw">find</span>(<img src="1536792463168.png" />)
+    <span class="skw">type</span>(<span class="str">'localhost'</span>)
+    <span class="kw">def</span> typeSlash():
+        keyDown(Key.ALT)
+        <span class="skw">type</span>(Key.NUM4+Key.NUM7)
+        keyUp()
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'projeto'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'produto'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'cadastrar'</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
 
-<span class="skw">wait</span>(<img src="1534977952724.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104.png" />)
 <span class="skw">click</span>(<img src="1534813808104.png" />)
@@ -101,6 +102,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076.png" />)
 <span class="skw">click</span>(<img src="1534813813076.png" />)
 <span class="skw">type</span>(<span class="str">'06'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875.png" />)
 <span class="skw">click</span>(<img src="1534813817875.png" />)
@@ -129,44 +134,27 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884.png" />)
 <span class="skw">click</span>(<img src="1533776396884.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-1.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-1.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-7.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-7.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-1.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto padrao'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-1.png" />)
-<span class="skw">click</span>(<img src="1537404525832-1.png" />)
+teste = <span class="str">"padrao"</span>
+
+<span class="kw">def</span> word(teste):
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.PRINTSCREEN)
+    <span class="kw">if</span>(exists(<img src="1536795174517-1.png" />)):
+        <span class="skw">click</span>(<img src="1536795174517-1.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1538440425431-7.png" />)
+        <span class="skw">click</span>(<img src="1538440425431-7.png" />)
+        <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+        <span class="skw">wait</span>(<img src="1537835985449-1.png" />)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'Produto '</span> + teste + Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+    <span class="skw">find</span>(<img src="1537404525832-1.png" />)
+    <span class="skw">click</span>(<img src="1537404525832-1.png" />)
 
 <span class="cmt"># CODIGO</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-10.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-10.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-10.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-10.png" />)
-<span class="skw">find</span>(<img src="1536792463168-1.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-1.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-1.png" />)
 <span class="skw">click</span>(<img src="1534813808104-1.png" />)
@@ -175,6 +163,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-1.png" />)
 <span class="skw">click</span>(<img src="1534813813076-1.png" />)
 <span class="skw">type</span>(<span class="str">'abc'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-1.png" />)
 <span class="skw">click</span>(<img src="1534813817875-1.png" />)
@@ -203,44 +195,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-1.png" />)
 <span class="skw">click</span>(<img src="1533776396884-1.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-2.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-2.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-8.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-8.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-2.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto codigo'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-2.png" />)
-<span class="skw">click</span>(<img src="1537404525832-2.png" />)
+teste = <span class="str">"codigo"</span>
+word(teste)
 
 <span class="cmt"># DATA DE FABRICAÇÃO</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-10.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-10.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-10.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-10.png" />)
-<span class="skw">find</span>(<img src="1536792463168-2.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-2.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-2.png" />)
 <span class="skw">click</span>(<img src="1534813808104-2.png" />)
@@ -249,6 +209,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-2.png" />)
 <span class="skw">click</span>(<img src="1534813813076-2.png" />)
 <span class="skw">type</span>(<span class="str">'06'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-2.png" />)
 <span class="skw">click</span>(<img src="1534813817875-2.png" />)
@@ -277,44 +241,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-2.png" />)
 <span class="skw">click</span>(<img src="1533776396884-2.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-3.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-3.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-3.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto data de fabricacao'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-3.png" />)
-<span class="skw">click</span>(<img src="1537404525832-3.png" />)
+teste = <span class="str">"data de fabricacao"</span>
+word(teste)
 
 <span class="cmt"># DATA DE RECEBIMENTO</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092.png" />)
-    <span class="skw">click</span>(<img src="1537837616092.png" />)
-<span class="skw">find</span>(<img src="1536792463168-3.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-3.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-3.png" />)
 <span class="skw">click</span>(<img src="1534813808104-3.png" />)
@@ -323,6 +255,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-3.png" />)
 <span class="skw">click</span>(<img src="1534813813076-3.png" />)
 <span class="skw">type</span>(<span class="str">'206'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-3.png" />)
 <span class="skw">click</span>(<img src="1534813817875-3.png" />)
@@ -351,44 +287,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-3.png" />)
 <span class="skw">click</span>(<img src="1533776396884-3.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-4.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-4.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-10.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-10.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto data de recebimento'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-4.png" />)
-<span class="skw">click</span>(<img src="1537404525832-4.png" />)
+teste = <span class="str">"data de recebimento"</span>
+word(teste)
 
 <span class="cmt"># DATAS</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-1.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-1.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-1.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-1.png" />)
-<span class="skw">find</span>(<img src="1536792463168-4.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-4.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-4.png" />)
 <span class="skw">click</span>(<img src="1534813808104-4.png" />)
@@ -397,6 +301,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-4.png" />)
 <span class="skw">click</span>(<img src="1534813813076-4.png" />)
 <span class="skw">type</span>(<span class="str">'36'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-4.png" />)
 <span class="skw">click</span>(<img src="1534813817875-4.png" />)
@@ -425,44 +333,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-4.png" />)
 <span class="skw">click</span>(<img src="1533776396884-4.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-11.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-11.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-4.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto datas impossiveis'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-5.png" />)
-<span class="skw">click</span>(<img src="1537404525832-5.png" />)
+teste = <span class="str">"datas impossiveis"</span>
+word(teste)
 
 <span class="cmt"># DATA DE VALIDADE</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-2.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-2.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-2.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-2.png" />)
-<span class="skw">find</span>(<img src="1536792463168-5.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-5.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-5.png" />)
 <span class="skw">click</span>(<img src="1534813808104-5.png" />)
@@ -471,6 +347,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-5.png" />)
 <span class="skw">click</span>(<img src="1534813813076-5.png" />)
 <span class="skw">type</span>(<span class="str">'89'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-5.png" />)
 <span class="skw">click</span>(<img src="1534813817875-5.png" />)
@@ -499,44 +379,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-5.png" />)
 <span class="skw">click</span>(<img src="1533776396884-5.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-5.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-5.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-12.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-12.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-5.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto data de validade'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-6.png" />)
-<span class="skw">click</span>(<img src="1537404525832-6.png" />)
+teste = <span class="str">"data de validade"</span>
+word(teste)
 
 <span class="cmt"># FORNECEDOR</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-3.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-3.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-3.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-3.png" />)
-<span class="skw">find</span>(<img src="1536792463168-6.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-6.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-6.png" />)
 <span class="skw">click</span>(<img src="1534813808104-6.png" />)
@@ -545,6 +393,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-6.png" />)
 <span class="skw">click</span>(<img src="1534813813076-6.png" />)
 <span class="skw">type</span>(<span class="str">'069'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-6.png" />)
 <span class="skw">click</span>(<img src="1534813817875-6.png" />)
@@ -569,44 +421,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-6.png" />)
 <span class="skw">click</span>(<img src="1533776396884-6.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-6.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-6.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-13.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-13.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-6.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto fornecedor'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-7.png" />)
-<span class="skw">click</span>(<img src="1537404525832-7.png" />)
+teste = <span class="str">"fornecedor"</span>
+word(teste)
 
 <span class="cmt"># LOTE</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-4.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-4.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-4.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-4.png" />)
-<span class="skw">find</span>(<img src="1536792463168-7.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-7.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-7.png" />)
 <span class="skw">click</span>(<img src="1534813808104-7.png" />)
@@ -615,6 +435,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-7.png" />)
 <span class="skw">click</span>(<img src="1534813813076-7.png" />)
 <span class="skw">type</span>(<span class="str">'abc'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-7.png" />)
 <span class="skw">click</span>(<img src="1534813817875-7.png" />)
@@ -643,44 +467,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-7.png" />)
 <span class="skw">click</span>(<img src="1533776396884-7.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-7.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-7.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-14.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-14.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-7.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto lote'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-8.png" />)
-<span class="skw">click</span>(<img src="1537404525832-8.png" />)
+teste = <span class="str">"lote"</span>
+word(teste)
 
 <span class="cmt"># NOME</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-5.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-5.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-5.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-5.png" />)
-<span class="skw">find</span>(<img src="1536792463168-8.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-8.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-8.png" />)
 <span class="skw">click</span>(<img src="1534813808104-8.png" />)
@@ -689,6 +481,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-8.png" />)
 <span class="skw">click</span>(<img src="1534813813076-8.png" />)
 <span class="skw">type</span>(<span class="str">'06'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-8.png" />)
 <span class="skw">click</span>(<img src="1534813817875-8.png" />)
@@ -717,44 +513,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-8.png" />)
 <span class="skw">click</span>(<img src="1533776396884-8.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-8.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-8.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-15.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-15.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-8.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto nome'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-9.png" />)
-<span class="skw">click</span>(<img src="1537404525832-9.png" />)
+teste = <span class="str">"nome"</span>
+word(teste)
 
 <span class="cmt"># VALOR</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-6.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-6.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-6.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-6.png" />)
-<span class="skw">find</span>(<img src="1536792463168-9.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-9.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-9.png" />)
 <span class="skw">click</span>(<img src="1534813808104-9.png" />)
@@ -763,6 +527,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-9.png" />)
 <span class="skw">click</span>(<img src="1534813813076-9.png" />)
 <span class="skw">type</span>(<span class="str">'806'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-9.png" />)
 <span class="skw">click</span>(<img src="1534813817875-9.png" />)
@@ -791,44 +559,12 @@ typeSlash()
 <span class="skw">find</span>(<img src="1533776396884-9.png" />)
 <span class="skw">click</span>(<img src="1533776396884-9.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-9.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-9.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-16.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-16.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-9.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto valor'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-10.png" />)
-<span class="skw">click</span>(<img src="1537404525832-10.png" />)
+teste = <span class="str">"valor"</span>
+word(teste)
 
 <span class="cmt"># CANCELAR</span>
 
-<span class="kw">if</span>(exists(<img src="1537836711054-7.png" />)):
-    <span class="skw">click</span>(<img src="1537836711054-7.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1537837616092-7.png" />)
-    <span class="skw">click</span>(<img src="1537837616092-7.png" />)
-<span class="skw">find</span>(<img src="1536792463168-10.png" />)
-<span class="skw">type</span>(<span class="str">'localhost'</span>)
-<span class="kw">def</span> typeSlash():
-    keyDown(Key.ALT)
-    <span class="skw">type</span>(Key.NUM4+Key.NUM7)
-    keyUp()
-typeSlash()
-<span class="skw">type</span>(<span class="str">'projeto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'produto'</span>)
-typeSlash()
-<span class="skw">type</span>(<span class="str">'cadastrar'</span>)
-<span class="skw">type</span>(Key.ENTER)
-
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">wait</span>(<img src="1534977952724-10.png" />)
+endereco()
 
 <span class="skw">find</span>(<img src="1534813808104-10.png" />)
 <span class="skw">click</span>(<img src="1534813808104-10.png" />)
@@ -837,6 +573,10 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534813813076-10.png" />)
 <span class="skw">click</span>(<img src="1534813813076-10.png" />)
 <span class="skw">type</span>(<span class="str">'06'</span>)
+
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">find</span>(<img src="1542843475777.png" />)
+<span class="skw">type</span>(<span class="str">"drgherger54"</span>)
 
 <span class="skw">find</span>(<img src="1534813817875-10.png" />)
 <span class="skw">click</span>(<img src="1534813817875-10.png" />)
@@ -865,20 +605,8 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534201439407.png" />)
 <span class="skw">click</span>(<img src="1534201439407.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-10.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-10.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-17.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-17.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-10.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto cancelar'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-11.png" />)
-<span class="skw">click</span>(<img src="1537404525832-11.png" />)
+teste = <span class="str">"cancelar"</span>
+word(teste)
 
 <span class="cmt"># EXCLUIR</span>
 
@@ -906,20 +634,8 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534203719624.png" />)
 <span class="skw">click</span>(<img src="1534203719624.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-11.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-11.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-18.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-18.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-11.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto excluir'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-12.png" />)
-<span class="skw">click</span>(<img src="1537404525832-12.png" />)
+teste = <span class="str">"excluir"</span>
+word(teste)
 
 <span class="cmt"># NOVO CADASTRO</span>
 
@@ -944,18 +660,9 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534201551167.png" />)
 <span class="skw">click</span>(<img src="1534201551167.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-12.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-12.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-19.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-19.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-12.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'Produto novo cadastro'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+teste = <span class="str">"novo cadastro"</span>
+word(teste)
+<span class="skw">click</span>(<img src="1536795174517-1.png" />)
 
 <span class="skw">find</span>(<img src="1538229390137.png" />)
 <span class="skw">click</span>(<img src="1538229390137.png" />)

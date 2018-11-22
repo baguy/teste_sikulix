@@ -16,6 +16,7 @@ def endereco():
     type('projeto')
     typeSlash()
     type('funcionario')
+    type(Key.DELETE)
     type(Key.ENTER)
     sleep(2)
 

@@ -74,7 +74,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554.png")
 find("1534202929734.png")
 click("1534202929734.png")
 type('0011')
@@ -118,7 +117,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554.png")
 find("1534202929734.png")
 click("1534202929734.png")
 type('0012')
@@ -174,7 +172,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-2.png")
 find("1534202929734-2.png")
 click("1534202929734-2.png")
 type(",", Key.SHIFT)
@@ -218,7 +215,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-1.png")
 find("1534202929734-1.png")
 click("1534202929734-1.png")
 type('0013')
@@ -262,7 +258,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-3.png")
 find("1534202929734-3.png")
 click("1534202929734-3.png")
 type('0014')
@@ -306,7 +301,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-4.png")
 find("1534202929734-4.png")
 click("1534202929734-4.png")
 type('0015')
@@ -350,7 +344,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-5.png")
 find("1534202929734-5.png")
 click("1534202929734-5.png")
 type('0016')
@@ -394,7 +387,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-6.png")
 find("1534202929734-6.png")
 click("1534202929734-6.png")
 type('0017')
@@ -438,7 +430,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-7.png")
 find("1534202929734-7.png")
 click("1534202929734-7.png")
 type('0018')
@@ -479,7 +470,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-8.png")
 find("1534202929734-8.png")
 click("1534202929734-8.png")
 type('0019')
@@ -520,7 +510,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-9.png")
 find("1534202929734-9.png")
 click("1534202929734-9.png")
 type('002')
@@ -564,7 +553,6 @@ word(teste)
 
 endereco()
 
-wait("1534202920554-11.png")
 find("1534202929734-11.png")
 click("1534202929734-11.png")
 type('0021')
@@ -623,6 +611,7 @@ def endereco2():
     typeSlash()
     type('processo_seletivo')
     type(Key.DELETE)
+    type(Key.ENTER)
     sleep(2)
 
 endereco2()

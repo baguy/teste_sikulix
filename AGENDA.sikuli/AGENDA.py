@@ -5,8 +5,9 @@ def endereco():
     if(exists("1537836711054-8.png")):
         click("1537836711054-8.png")
     else:
-        find("1537837616092-8.png")
-        click("1537837616092-8.png")
+        find("1542066146734.png")
+        click("1542066146734.png")
+        
     find("1536792463168-8.png")
     type('localhost')
     def typeSlash():
@@ -18,11 +19,11 @@ def endereco():
     typeSlash()
     type('agenda')
     type(Key.ENTER)
-    sleep(2)
+    sleep(5)
 
 endereco()
 
-wait("1537402775994.png")
+sleep(5)
 
 find("1538225313309.png")
 click("1538225313309.png")
@@ -53,11 +54,11 @@ teste = 'padrao'
 def word(teste):
     sleep(2)
     type(Key.PRINTSCREEN)
-    if(exists("1536795174517-8.png")):
-        click("1536795174517-8.png")
+    if(exists("1542066300599.png")):
+        click("1542066300599.png")
     else:
-        find("1538440425431-8.png")
-        click("1538440425431-8.png")
+        find("1542066351867.png")
+        click("1542066351867.png")
         type('word' + Key.ENTER)
         sleep(2)
         wait("1537835985449-8.png")
@@ -73,7 +74,7 @@ word(teste)
 
 endereco()
 
-wait("1537402775994-1.png")
+sleep(5)
 
 find("1538225313309-1.png")
 click("1538225313309-1.png")
@@ -98,13 +99,13 @@ find("1537403883554-1.png")
 click("1537403883554-1.png")
 
 teste = 'cor nao selecionada'
-word()
+word(teste)
 
 # DIA
 
 endereco()
 
-wait("1537402775994-2.png")
+sleep(5)
 
 find("1538225313309-2.png")
 click("1538225313309-2.png")
@@ -122,7 +123,6 @@ click("1537403093452-2.png")
 type(Key.TAB)
 type('22')
 type(Key.TAB)
-find("1537403122936-2.png")
 type('15012000')
 type(Key.TAB)
 type('10')
@@ -136,7 +136,7 @@ word(teste)
 # DATAS IMPOSSIVEIS
 
 endereco()
-wait("1537402775994-3.png")
+sleep(5)
 
 find("1538225313309-3.png")
 click("1538225313309-3.png")
@@ -168,7 +168,7 @@ word(teste)
 
 endereco()
 
-wait("1537402775994-4.png")
+sleep(5)
 
 find("1538225313309-4.png")
 click("1538225313309-4.png")
@@ -186,7 +186,6 @@ click("1537403093452-3.png")
 type(Key.TAB)
 type('22')
 type(Key.TAB)
-find("1537403122936-3.png")
 type(Key.LEFT + Key.DELETE + Key.DELETE)
 type('28')
 type(Key.TAB)
@@ -202,7 +201,7 @@ word(teste)
 
 endereco()
 
-wait("1537402775994-5.png")
+sleep(5)
 
 find("1538225313309-5.png")
 click("1538225313309-5.png")
@@ -220,7 +219,6 @@ click("1537403093452-4.png")
 type(Key.TAB)
 type('2562')
 type(Key.TAB)
-find("1537403122936-4.png")
 type(Key.LEFT + Key.DELETE + Key.DELETE)
 type('28')
 type(Key.TAB)
@@ -236,7 +234,7 @@ word(teste)
 
 endereco()
 
-wait("1537402775994-6.png")
+sleep(5)
 
 find("1538225313309-6.png")
 click("1538225313309-6.png")
@@ -253,8 +251,6 @@ click("1537403093452-5.png")
 type(Key.TAB)
 type('22')
 type(Key.TAB + Key.TAB)
-find("1537403122936-5.png")
-click("1537403122936-5.png")
 type(Key.TAB)
 type('10')
 
@@ -268,7 +264,7 @@ word(teste)
 
 endereco()
 
-wait("1537402775994-7.png")
+sleep(5)
 
 find("1538226902478.png")
 click("1538226902478.png")

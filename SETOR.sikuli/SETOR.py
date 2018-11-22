@@ -15,9 +15,9 @@ def endereco():
     typeSlash()
     type('projeto')
     typeSlash()
-    type('sac')
-    typeSlash()
     type('setor')
+    typeSlash()
+    type('cadastrar')
     type(Key.ENTER)
     sleep(2)
     
@@ -102,6 +102,7 @@ def endereco2():
     typeSlash()
     type('setor')
     type(Key.DELETE)
+    type(Key.ENTER)
     sleep(2)
 
 endereco2()
