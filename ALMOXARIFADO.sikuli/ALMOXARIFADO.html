@@ -1,0 +1,341 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>ALMOXARIFADO.sikuli</h2> <a href="ALMOXARIFADO.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># ALMOXARIFADO</span>
+
+<span class="kw">def</span> endereco():
+    <span class="kw">if</span>(exists(<img src="1537836711054.png" />)):
+        <span class="skw">click</span>(<img src="1537836711054.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1537837616092.png" />)
+        <span class="skw">click</span>(<img src="1537837616092.png" />)
+    <span class="skw">find</span>(<img src="1536792463168.png" />)
+    <span class="skw">type</span>(<span class="str">'localhost'</span>)
+    <span class="kw">def</span> typeSlash():
+        keyDown(Key.ALT)
+        <span class="skw">type</span>(Key.NUM4+Key.NUM7)
+        keyUp()
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'projeto'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'almoxarifado'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'cadastrar'</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+
+
+<span class="cmt"># PADRAO</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'coisa'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'3'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'222222'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">'alguma coisa'</span>)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'10102018'</span>)
+<span class="skw">find</span>(<img src="1539220349544.png" />)
+<span class="skw">click</span>(<img src="1539220349544.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+<span class="kw">def</span> word(teste):
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.PRINTSCREEN)
+    <span class="kw">if</span>(exists(<img src="1536795174517-6.png" />)):
+        <span class="skw">click</span>(<img src="1536795174517-6.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1538440425431-1.png" />)
+        <span class="skw">click</span>(<img src="1538440425431-1.png" />)
+        <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">wait</span>(<img src="1537835985449-6.png" />)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'Almoxarifado '</span>+ teste + Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">find</span>(<img src="1537404525832-6.png" />)
+    <span class="skw">click</span>(<img src="1537404525832-6.png" />)
+
+teste = <span class="str">'padrao'</span>
+word(teste)
+
+<span class="cmt"># NOME</span>
+
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'123'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'3'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'222222'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">'alguma coisa'</span>)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'10102018'</span>)
+<span class="skw">find</span>(<img src="1539220349544.png" />)
+<span class="skw">click</span>(<img src="1539220349544.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+teste = <span class="str">'numeros inseridos no campo NOME'</span>
+word(teste)
+
+
+<span class="cmt"># QUANTIDADE</span>
+
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'outra coisa'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'e'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'322222'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">'alguma coisa'</span>)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'10102018'</span>)
+<span class="skw">find</span>(<img src="1539220349544.png" />)
+<span class="skw">click</span>(<img src="1539220349544.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+teste = <span class="str">'letra inserida no campo QUANTIDADE'</span>
+word(teste)
+
+
+<span class="cmt"># VALOR</span>
+
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'mais coisa'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'4'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'abc'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">'alguma coisa'</span>)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'10102018'</span>)
+<span class="skw">find</span>(<img src="1539220349544.png" />)
+<span class="skw">click</span>(<img src="1539220349544.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+teste = <span class="str">'letras inseridas no campo VALOR'</span>
+word(teste)
+
+
+<span class="cmt"># DESCRICAO</span>
+
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'mais coisa'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'4'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'555'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">','</span>, Key.SHIFT)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'10102018'</span>)
+<span class="skw">find</span>(<img src="1539220349544.png" />)
+<span class="skw">click</span>(<img src="1539220349544.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+teste = <span class="str">'caractere especial - menor - inserido no campo DESCRIÇÃO'</span>
+word(teste)
+
+
+<span class="cmt"># DATA DE RECEBIMENTO</span>
+
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'mais uma coisa'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'9'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'10555'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">'aaae'</span>)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'32132222'</span>)
+<span class="skw">find</span>(<img src="1539220349544.png" />)
+<span class="skw">click</span>(<img src="1539220349544.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+teste = <span class="str">'data impossivel no campo DATA DE RECEBIMENTO'</span>
+word(teste)
+
+
+<span class="cmt"># UNIDADE DE MEDIDA</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1539218410606.png" />)
+<span class="skw">click</span>(<img src="1539218410606.png" />)
+<span class="skw">type</span>(<span class="str">'mais uma coisa'</span>)
+<span class="skw">find</span>(<img src="1539218528869.png" />)
+<span class="skw">click</span>(<img src="1539218528869.png" />)
+<span class="skw">type</span>(<span class="str">'9'</span>)
+<span class="skw">find</span>(<img src="1539218557805.png" />)
+<span class="skw">click</span>(<img src="1539218557805.png" />)
+<span class="skw">type</span>(<span class="str">'10555'</span>)
+<span class="skw">find</span>(<img src="1539220293856.png" />)
+<span class="skw">click</span>(<img src="1539220293856.png" />)
+<span class="skw">type</span>(<span class="str">'descricao'</span>)
+<span class="skw">find</span>(<img src="1539220325267.png" />)
+<span class="skw">click</span>(<img src="1539220325267.png" />)
+<span class="skw">type</span>(<span class="str">'10102017'</span>)
+<span class="skw">find</span>(<img src="1539220474860.png" />)
+<span class="skw">click</span>(<img src="1539220474860.png" />)
+
+teste = <span class="str">'unidade de medida nao selecionado'</span>
+word(teste)
+
+<span class="skw">click</span>(<img src="1536795174517-6.png" />)
+<span class="skw">find</span>(<img src="1538229390137.png" />)
+<span class="skw">click</span>(<img src="1538229390137.png" />)
+<span class="skw">find</span>(<img src="1538229412402.png" />)
+<span class="skw">doubleClick</span>(<img src="1538229412402.png" />)
+<span class="skw">find</span>(<img src="1539650165371.png" />)
+<span class="skw">click</span>(<img src="1539650165371.png" />)
+<span class="skw">find</span>(<img src="1538229509689.png" />)
+<span class="skw">click</span>(<img src="1538229509689.png" />)
+<span class="skw">type</span>(<span class="str">'almoxarifado testes'</span>)
+<span class="skw">find</span>(<img src="1538229537023.png" />)
+<span class="skw">click</span>(<img src="1538229537023.png" />)
+<span class="skw">find</span>(<img src="1538229937734.png" />)
+<span class="skw">click</span>(<img src="1538229937734.png" />)
+</pre>
+</body>
+</html>
