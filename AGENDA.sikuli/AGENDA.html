@@ -1,0 +1,367 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>AGENDA.sikuli</h2> <a href="AGENDA.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="cmt"># PADRAO</span>
+
+
+<span class="kw">def</span> endereco():
+    <span class="kw">if</span>(exists(<img src="1537836711054-8.png" />)):
+        <span class="skw">click</span>(<img src="1537836711054-8.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1542066146734.png" />)
+        <span class="skw">click</span>(<img src="1542066146734.png" />)
+
+    <span class="skw">find</span>(<img src="1536792463168-8.png" />)
+    <span class="skw">type</span>(<span class="str">'localhost'</span>)
+    <span class="kw">def</span> typeSlash():
+        keyDown(Key.ALT)
+        <span class="skw">type</span>(Key.NUM4+Key.NUM7)
+        keyUp()
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'projeto'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'agenda'</span>)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">sleep</span>(<span class="dig">5</span>)
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309.png" />)
+<span class="skw">click</span>(<img src="1538225313309.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612.png" />)
+<span class="skw">click</span>(<img src="1537402956612.png" />)
+<span class="skw">type</span>(<span class="str">'Palestra'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">find</span>(<img src="1537403076265.png" />)
+<span class="skw">click</span>(<img src="1537403076265.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1537403093452.png" />)
+<span class="skw">click</span>(<img src="1537403093452.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'22'</span>)
+<span class="skw">type</span>(Key.TAB + Key.TAB)
+<span class="skw">find</span>(<img src="1537403122936.png" />)
+<span class="skw">click</span>(<img src="1537403122936.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'10'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554.png" />)
+<span class="skw">click</span>(<img src="1537403883554.png" />)
+
+teste = <span class="str">'padrao'</span>
+
+<span class="kw">def</span> word(teste):
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.PRINTSCREEN)
+    <span class="kw">if</span>(exists(<img src="1542066300599.png" />)):
+        <span class="skw">click</span>(<img src="1542066300599.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1542066351867.png" />)
+        <span class="skw">click</span>(<img src="1542066351867.png" />)
+        <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">wait</span>(<img src="1537835985449-8.png" />)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'agenda '</span>+ teste + Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+    <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">find</span>(<img src="1537404525832-7.png" />)
+    <span class="skw">click</span>(<img src="1537404525832-7.png" />)
+
+word(teste)
+
+<span class="cmt"># COR</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309-1.png" />)
+<span class="skw">click</span>(<img src="1538225313309-1.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612-1.png" />)
+<span class="skw">click</span>(<img src="1537402956612-1.png" />)
+<span class="skw">type</span>(<span class="str">'Palestra'</span>)
+<span class="skw">type</span>(Key.TAB)
+
+<span class="skw">find</span>(<img src="1537403093452-1.png" />)
+<span class="skw">click</span>(<img src="1537403093452-1.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'22'</span>)
+<span class="skw">type</span>(Key.TAB + Key.TAB)
+<span class="skw">find</span>(<img src="1537403122936-1.png" />)
+<span class="skw">click</span>(<img src="1537403122936-1.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'10'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554-1.png" />)
+<span class="skw">click</span>(<img src="1537403883554-1.png" />)
+
+teste = <span class="str">'cor nao selecionada - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+<span class="cmt"># DIA</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309-2.png" />)
+<span class="skw">click</span>(<img src="1538225313309-2.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612-2.png" />)
+<span class="skw">click</span>(<img src="1537402956612-2.png" />)
+<span class="skw">type</span>(<span class="str">'Palestra'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">find</span>(<img src="1537403076265-1.png" />)
+<span class="skw">click</span>(<img src="1537403076265-1.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1537403093452-2.png" />)
+<span class="skw">click</span>(<img src="1537403093452-2.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'22'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'15012000'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'10'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554-2.png" />)
+<span class="skw">click</span>(<img src="1537403883554-2.png" />)
+
+teste = <span class="str">'data de FIM menor que de INICIO - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+<span class="cmt"># DATAS IMPOSSIVEIS</span>
+
+endereco()
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309-3.png" />)
+<span class="skw">click</span>(<img src="1538225313309-3.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612-3.png" />)
+<span class="skw">click</span>(<img src="1537402956612-3.png" />)
+<span class="skw">type</span>(<span class="str">'Palestra'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">find</span>(<img src="1537403076265-2.png" />)
+<span class="skw">click</span>(<img src="1537403076265-2.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'32131750'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'22'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'32131752'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'10'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554-3.png" />)
+<span class="skw">click</span>(<img src="1537403883554-3.png" />)
+
+teste = <span class="str">'datas impossiveis nos camos INICIO e FIM - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+<span class="cmt"># HORARIO</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309-4.png" />)
+<span class="skw">click</span>(<img src="1538225313309-4.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612-4.png" />)
+<span class="skw">click</span>(<img src="1537402956612-4.png" />)
+<span class="skw">type</span>(<span class="str">'Palestra'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">find</span>(<img src="1537403076265-3.png" />)
+<span class="skw">click</span>(<img src="1537403076265-3.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1537403093452-3.png" />)
+<span class="skw">click</span>(<img src="1537403093452-3.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'22'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(Key.LEFT + Key.DELETE + Key.DELETE)
+<span class="skw">type</span>(<span class="str">'28'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'10'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554-4.png" />)
+<span class="skw">click</span>(<img src="1537403883554-4.png" />)
+
+teste = <span class="str">'horario de FIM menor do que de INICIO - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+<span class="cmt"># HORARIOS IMPOSSIVEIS</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309-5.png" />)
+<span class="skw">click</span>(<img src="1538225313309-5.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612-5.png" />)
+<span class="skw">click</span>(<img src="1537402956612-5.png" />)
+<span class="skw">type</span>(<span class="str">'Palestra'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">find</span>(<img src="1537403076265-4.png" />)
+<span class="skw">click</span>(<img src="1537403076265-4.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1537403093452-4.png" />)
+<span class="skw">click</span>(<img src="1537403093452-4.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'2562'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(Key.LEFT + Key.DELETE + Key.DELETE)
+<span class="skw">type</span>(<span class="str">'28'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'2663'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554-5.png" />)
+<span class="skw">click</span>(<img src="1537403883554-5.png" />)
+
+teste = <span class="str">'horarios impossiveis nos campos de HORARIOS - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+<span class="cmt"># TITULO</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538225313309-6.png" />)
+<span class="skw">click</span>(<img src="1538225313309-6.png" />)
+
+<span class="skw">find</span>(<img src="1537402956612-6.png" />)
+<span class="skw">click</span>(<img src="1537402956612-6.png" />)
+<span class="skw">type</span>(<span class="str">','</span>, Key.SHIFT)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">find</span>(<img src="1537403076265-5.png" />)
+<span class="skw">click</span>(<img src="1537403076265-5.png" />)
+<span class="skw">type</span>(Key.DOWN + Key.ENTER)
+<span class="skw">find</span>(<img src="1537403093452-5.png" />)
+<span class="skw">click</span>(<img src="1537403093452-5.png" />)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'22'</span>)
+<span class="skw">type</span>(Key.TAB + Key.TAB)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'10'</span>)
+
+<span class="skw">find</span>(<img src="1537403883554-6.png" />)
+<span class="skw">click</span>(<img src="1537403883554-6.png" />)
+
+teste = <span class="str">'caractere especial - menor - inserido no campo TITULO - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+<span class="cmt"># EXCLUIR</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">5</span>)
+
+<span class="skw">find</span>(<img src="1538226902478.png" />)
+<span class="skw">click</span>(<img src="1538226902478.png" />)
+
+<span class="skw">wait</span>(<img src="1538226921497.png" />)
+
+<span class="skw">find</span>(<img src="1538226940200.png" />)
+<span class="skw">click</span>(<img src="1538226940200.png" />)
+
+<span class="skw">find</span>(<img src="1538226969720.png" />)
+<span class="skw">click</span>(<img src="1538226969720.png" />)
+
+teste = <span class="str">'excluir'</span>
+word(teste)
+<span class="skw">click</span>(<img src="1536795174517-8.png" />)
+
+
+<span class="skw">find</span>(<img src="1538229390137.png" />)
+<span class="skw">click</span>(<img src="1538229390137.png" />)
+<span class="skw">find</span>(<img src="1538229412402.png" />)
+<span class="skw">doubleClick</span>(<img src="1538229412402.png" />)
+<span class="skw">find</span>(<img src="1539650165371.png" />)
+<span class="skw">click</span>(<img src="1539650165371.png" />)
+<span class="skw">find</span>(<img src="1538229509689.png" />)
+<span class="skw">click</span>(<img src="1538229509689.png" />)
+<span class="skw">type</span>(<span class="str">'agenda testes'</span>)
+<span class="skw">find</span>(<img src="1538229537023.png" />)
+<span class="skw">click</span>(<img src="1538229537023.png" />)
+<span class="skw">find</span>(<img src="1538229937734.png" />)
+<span class="skw">click</span>(<img src="1538229937734.png" />)
+</pre>
+</body>
+</html>
