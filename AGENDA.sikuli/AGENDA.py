@@ -272,7 +272,7 @@ click("1538226940200.png")
 find("1538226969720.png")
 click("1538226969720.png")
 
-teste = 'excluir'
+teste = 'excluir - DEVE apresentar mensagem de confirmacao'
 word(teste)
 click("1536795174517-8.png")
 

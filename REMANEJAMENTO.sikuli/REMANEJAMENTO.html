@@ -91,7 +91,7 @@
 
 endereco()
 <span class="skw">type</span>(Key.ENTER)
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+<span class="skw">sleep</span>(<span class="dig">2</span>)
 
 <span class="skw">find</span>(<img src="1542060495469.png" />)
 <span class="skw">click</span>(<img src="1542060495469.png" />)
@@ -131,7 +131,7 @@ teste = <span class="str">'padrao'</span>
 
 word(teste)
 
-<span class="cmt"># NÃO SELECIONAR E CANCELAR</span>
+<span class="cmt"># NÃO SELECIONAR</span>
 
 <span class="kw">def</span> typeSlash():
     keyDown(Key.ALT)
@@ -143,12 +143,12 @@ endereco()
     <span class="skw">type</span>(<span class="str">'cadastrar'</span>)
     <span class="skw">type</span>(Key.ENTER)
 cadastrar()
-<span class="skw">sleep</span>(<span class="dig">5</span>)
+<span class="skw">sleep</span>(<span class="dig">2</span>)
 
 <span class="skw">find</span>(<img src="1542060648978.png" />)
 <span class="skw">click</span>(<img src="1542060648978.png" />)
 
-teste = <span class="str">'sem selecionar'</span>
+teste = <span class="str">'sem selecionar nenhum campo - DEVE apresentar mensagem de erro em todos os campos não selecionados'</span>
 word(teste)
 
 <span class="cmt"># CANCELAR</span>
@@ -160,7 +160,7 @@ cadastrar()
 <span class="skw">find</span>(<img src="1542061933008.png" />)
 <span class="skw">click</span>(<img src="1542061933008.png" />)
 
-teste = <span class="str">'cancelar'</span>
+teste = <span class="str">'cancelar - DEVE retornar para pagina de remanejamento'</span>
 word(teste)
 
 <span class="cmt"># EXCLUIR</span>
@@ -173,7 +173,7 @@ endereco()
 <span class="skw">find</span>(<img src="1542065998021.png" />)
 <span class="skw">click</span>(<img src="1542065998021.png" />)
 
-teste = <span class="str">'excluir'</span>
+teste = <span class="str">'excluir - DEVE apresentar mensagem de confirmacao'</span>
 word(teste)
 
 <span class="skw">click</span>(<img src="1536795174517-8.png" />)

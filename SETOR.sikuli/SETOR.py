@@ -23,7 +23,6 @@ def endereco():
     
 endereco()
 
-wait("1534202609484.png")
 find("1534202626818.png")
 click("1534202626818.png")
 type('rh')
@@ -55,14 +54,13 @@ word(teste)
 
 endereco()
 
-wait("1534202609484-1.png")
 find("1534202626818-1.png")
 click("1534202626818-1.png")
 type(',' + Key.SHIFT)
 find("1533776396884-1.png")
 click("1533776396884-1.png")
 
-teste = 'setor'
+teste = 'caractere especial no campo SETOR - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -71,14 +69,13 @@ word(teste)
 
 endereco()
 
-wait("1534202609484-2.png")
 find("1534202626818-2.png")
 click("1534202626818-2.png")
 type('rh')
 find("1534201439407.png")
 click("1534201439407.png")
 
-teste = 'cancelar'
+teste = 'cancelar - DEVE retornar para a pagina de setor'
 word(teste)
 
 
@@ -125,7 +122,7 @@ wait("1534203760756.png")
 find("1534203719624.png")
 click("1534203719624.png")
 
-teste = 'excluir'
+teste = 'excluir - DEVE apresentar mensagem de confirmacao'
 word(teste)
 
 click("1536795174517-13.png")

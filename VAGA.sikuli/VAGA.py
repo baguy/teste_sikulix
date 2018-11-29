@@ -23,7 +23,6 @@ def endereco():
     
 endereco()
 
-wait("1534202708565.png")
 
 if(exists("1539217740756.png")):
     find("1539217004478.png")
@@ -88,7 +87,6 @@ word(teste)
 
 endereco()
 
-wait("1534202708565-1.png")
 find("1534202735219-1.png")
 click("1534202735219-1.png")
 type('11112019')
@@ -101,7 +99,7 @@ type('Falsete')
 find("1533776396884-1.png")
 click("1533776396884-1.png")
 
-teste = 'cargo'
+teste = 'CARGO nao selecionado - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -110,7 +108,7 @@ word(teste)
 
 endereco()
 
-wait("1534202708565-2.png")
+
 find("1534814792747-2.png")
 click("1534814792747-2.png")
 type(Key.DOWN + Key.ENTER)
@@ -126,7 +124,7 @@ type('Falsete')
 find("1533776396884-2.png")
 click("1533776396884-2.png")
 
-teste = 'data impossivel'
+teste = 'DATA impossivel - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -135,7 +133,6 @@ word(teste)
 
 endereco()
 
-wait("1534202708565-3.png")
 find("1534814792747-3.png")
 click("1534814792747-3.png")
 type(Key.DOWN + Key.ENTER)
@@ -151,7 +148,7 @@ type('Falsete')
 find("1533776396884-3.png")
 click("1533776396884-3.png")
 
-teste = 'quantidade'
+teste = 'letras no campo QUANTIDADE - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -175,7 +172,7 @@ type(",", Key.SHIFT)
 find("1533776396884-4.png")
 click("1533776396884-4.png")
 
-teste = 'requisitos'
+teste = 'caractere especial no campo REQUISITOS - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -189,7 +186,7 @@ click("1534814792747-6.png")
 find("1534201439407.png")
 click("1534201439407.png")
 
-teste = 'cancelar'
+teste = 'cancelar - DEVE retornar para tela de vaga'
 word(teste)
 
 
@@ -224,7 +221,7 @@ wait("1534203760756.png")
 find("1534203719624.png")
 click("1534203719624.png")
 
-teste = 'excluir'
+teste = 'excluir - DEVE apresentar mensagem de confirmacao'
 word(teste)
 
 

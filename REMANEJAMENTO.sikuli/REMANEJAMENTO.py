@@ -19,7 +19,7 @@ def endereco():
   
 endereco()
 type(Key.ENTER)
-sleep(5)  
+sleep(2)  
 
 find("1542060495469.png")
 click("1542060495469.png")
@@ -59,7 +59,7 @@ def word(teste):
 
 word(teste)
 
-# NÃO SELECIONAR E CANCELAR
+# NÃO SELECIONAR
 
 def typeSlash():
     keyDown(Key.ALT)
@@ -71,12 +71,12 @@ def cadastrar():
     type('cadastrar')
     type(Key.ENTER) 
 cadastrar()
-sleep(5)
+sleep(2)
 
 find("1542060648978.png")
 click("1542060648978.png")
 
-teste = 'sem selecionar'
+teste = 'sem selecionar nenhum campo - DEVE apresentar mensagem de erro em todos os campos não selecionados'
 word(teste)
 
 # CANCELAR
@@ -88,7 +88,7 @@ sleep(5)
 find("1542061933008.png")
 click("1542061933008.png")
 
-teste = 'cancelar'
+teste = 'cancelar - DEVE retornar para pagina de remanejamento'
 word(teste)
 
 # EXCLUIR
@@ -101,7 +101,7 @@ click("1542065978727.png")
 find("1542065998021.png")
 click("1542065998021.png")
 
-teste = 'excluir'
+teste = 'excluir - DEVE apresentar mensagem de confirmacao'
 word(teste)
 
 click("1536795174517-8.png")

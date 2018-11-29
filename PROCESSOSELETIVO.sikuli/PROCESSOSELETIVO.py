@@ -22,8 +22,7 @@ def endereco():
     sleep(2)
     
 endereco()
-
-wait("1534202920554.png")
+ 
 find("1534202929734.png")
 click("1534202929734.png")
 type('001')
@@ -108,7 +107,7 @@ type('Uau...')
 find("1534986612530-2.png")
 click("1534986612530-2.png")
 
-teste = 'uma etapa'
+teste = 'adicionar UMA etapa e preencher todos os campos'
 word(teste)
 
 
@@ -163,7 +162,7 @@ type('Uau...')
 find("1534986612530-2.png")
 click("1534986612530-2.png")
 
-teste = 'duas etapas'
+teste = 'adicionar DUAS etapas e preencher todos os campos'
 word(teste)
 
 
@@ -206,7 +205,7 @@ type('Uau...')
 find("1534986612530-2.png")
 click("1534986612530-2.png")
 
-teste = 'codigo'
+teste = 'caractere especial no campo CODIGO - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -249,7 +248,7 @@ type('Uau...')
 find("1534986612530-1.png")
 click("1534986612530-1.png")
 
-teste = 'data inicio'
+teste = 'data impossivel no campo DATA DE INICIO - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -292,7 +291,7 @@ type('Uau...')
 find("1534986612530-3.png")
 click("1534986612530-3.png")
 
-teste = 'datas'
+teste = 'data de inicio maior do que data de termino - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -335,7 +334,7 @@ type('Uau...')
 find("1534986612530-4.png")
 click("1534986612530-4.png")
 
-teste = 'data termino'
+teste = 'data impossivel no campo DATA DE TERMINO - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -378,7 +377,7 @@ type('Uau...')
 find("1534986612530-5.png")
 click("1534986612530-5.png")
 
-teste = 'descricao'
+teste = 'caractere especial em DESCRICAO - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -421,7 +420,7 @@ type(',', Key.SHIFT)
 find("1534986612530-6.png")
 click("1534986612530-6.png")
 
-teste = 'descricao etapa'
+teste = 'caractere especial no campo DESCRICAO de etapa - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -461,7 +460,7 @@ type('Uau...')
 find("1534986612530-7.png")
 click("1534986612530-7.png")
 
-teste = 'caga'
+teste = 'não selecionar VAGA - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -501,7 +500,7 @@ type('Uau...')
 find("1533776396884.png")
 click("1533776396884.png")
 
-teste = 'responsavel'
+teste = 'não selecionar RESPOINSAVEL - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -544,7 +543,7 @@ type('Uau...')
 find("1534986612530-8.png")
 click("1534986612530-8.png")
 
-teste = 'nome etapa'
+teste = 'caractere especial no campo NOME da etapa - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -587,7 +586,7 @@ type('Uau...')
 find("1534986612530-10.png")
 click("1534986612530-10.png")
 
-teste = 'nome'
+teste = 'caractere especial no campo NOME - DEVE apresentar mensagem de erro'
 word(teste)
 
 

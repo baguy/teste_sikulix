@@ -117,7 +117,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-1.png")
 click("1533776396884-1.png")
 
-teste = 'nome'
+teste = 'numeros inseridos no campo NOME - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -157,7 +157,7 @@ click("1542840428356.png")
 find("1533776396884-2.png")
 click("1533776396884-2.png")
 
-teste = 'email'
+teste = 'EMAIL invalido - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -187,7 +187,7 @@ find("1534201098496-3.png")
 click("1534201098496-3.png")
 type('11665030')
 type(Key.TAB + Key.TAB + Key.TAB)
-type(",", Key.SHIFT)
+type("Capivara")
 find("1534201189066-3.png")
 click("1534201189066-3.png")
 type('123')
@@ -199,7 +199,7 @@ click("1542840428356.png")
 find("1533776396884-3.png")
 click("1533776396884-3.png")
 
-teste = 'bairro'
+teste = 'editar campo BAIRRO apos inserir CEP valido - DEVE permitir'
 word(teste)
 
 
@@ -239,7 +239,7 @@ click("1542840428356.png")
 find("1533776396884-4.png")
 click("1533776396884-4.png")
 
-teste = 'data de nascimento'
+teste = 'DATA de nascimento invalida - DEVE apresnetar mensagem de erro'
 word(teste)
 
 
@@ -279,7 +279,7 @@ click("1542840428356.png")
 find("1533776396884-5.png")
 click("1533776396884-5.png")
 
-teste = 'cpf'
+teste = 'CPF invalido - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -313,7 +313,7 @@ click("1538442504462.png")
 find("1538442523671.png")
 click("1538442523671.png")
 
-teste = 'excluir'
+teste = 'excluir - DEVE apresentar mensagem de confirmacao'
 word(teste)
 
 click("1536795174517-8.png")

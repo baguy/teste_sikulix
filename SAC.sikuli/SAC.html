@@ -109,20 +109,23 @@ endereco()
 <span class="skw">find</span>(<img src="1533776396884.png" />)
 <span class="skw">click</span>(<img src="1533776396884.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-1.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-1.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-7.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-7.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC padrao'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832.png" />)
-<span class="skw">click</span>(<img src="1537404525832.png" />)
+teste = <span class="str">'padrao'</span>
+<span class="kw">def</span> word(teste):
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.PRINTSCREEN)
+    <span class="kw">if</span>(exists(<img src="1536795174517-1.png" />)):
+        <span class="skw">click</span>(<img src="1536795174517-1.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1538440425431-7.png" />)
+        <span class="skw">click</span>(<img src="1538440425431-7.png" />)
+        <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+        <span class="skw">wait</span>(<img src="1537835985449.png" />)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'SAC '</span>+ teste + Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+    <span class="skw">find</span>(<img src="1537404525832.png" />)
+    <span class="skw">click</span>(<img src="1537404525832.png" />)
+word(teste)
 
 <span class="cmt"># TITULO</span>
 
@@ -143,20 +146,8 @@ endereco()
 <span class="skw">find</span>(<img src="1533776396884-1.png" />)
 <span class="skw">click</span>(<img src="1533776396884-1.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-2.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-2.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-8.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-8.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-1.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC titulo'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-1.png" />)
-<span class="skw">click</span>(<img src="1537404525832-1.png" />)
+teste = <span class="str">'caractere especial no campo TITULO DE RECLAMACAO - DEVE apresentar mensagem de erro'</span>
+word(teste)
 
 <span class="cmt"># PROBLEMA</span>
 
@@ -177,20 +168,8 @@ endereco()
 <span class="skw">find</span>(<img src="1533776396884-2.png" />)
 <span class="skw">click</span>(<img src="1533776396884-2.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-3.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-3.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-2.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC problema'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-2.png" />)
-<span class="skw">click</span>(<img src="1537404525832-2.png" />)
+teste = <span class="str">'caractere especial no campo PROBLEMA - DEVE apresentar mensagem de erro'</span>
+word(teste)
 
 <span class="cmt"># CANCELAR</span>
 
@@ -211,20 +190,8 @@ endereco()
 <span class="skw">find</span>(<img src="1534201439407.png" />)
 <span class="skw">click</span>(<img src="1534201439407.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-4.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-4.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-10.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-10.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-3.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC cancelar'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-3.png" />)
-<span class="skw">click</span>(<img src="1537404525832-3.png" />)
+teste = <span class="str">'cancelar - DEVE retornar para a tela de SAC'</span>
+word(teste)
 
 <span class="cmt"># NOVO CADASTRO</span>
 
@@ -243,26 +210,15 @@ typeSlash()
 <span class="skw">type</span>(<span class="str">'projeto'</span>)
 typeSlash()
 <span class="skw">type</span>(<span class="str">'sac'</span>)
+<span class="skw">type</span>(Key.DELETE)
 <span class="skw">type</span>(Key.ENTER)
 <span class="skw">sleep</span>(<span class="dig">2</span>)
 
 <span class="skw">find</span>(<img src="1534201551167.png" />)
 <span class="skw">click</span>(<img src="1534201551167.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-5.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-5.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-11.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-11.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-4.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC novo cadastro'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-4.png" />)
-<span class="skw">click</span>(<img src="1537404525832-4.png" />)
+teste = <span class="str">'botao novo cadastro'</span>
+word(teste)
 
 <span class="cmt"># ATUALIZAR</span>
 
@@ -281,6 +237,7 @@ typeSlash()
 <span class="skw">type</span>(<span class="str">'projeto'</span>)
 typeSlash()
 <span class="skw">type</span>(<span class="str">'sac'</span>)
+<span class="skw">type</span>(Key.DELETE)
 <span class="skw">type</span>(Key.ENTER)
 <span class="skw">sleep</span>(<span class="dig">2</span>)
 
@@ -304,20 +261,8 @@ typeSlash()
 <span class="skw">find</span>(<img src="1534203719624.png" />)
 <span class="skw">click</span>(<img src="1534203719624.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-3.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-3.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-2.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC atualizar'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-2.png" />)
-<span class="skw">click</span>(<img src="1537404525832-2.png" />)
+teste = <span class="str">'atualizar cadastro - DEVE apresentar mensagem de confirmacao'</span>
+word(teste)
 
 <span class="cmt"># RESPOSTA</span>
 
@@ -336,6 +281,7 @@ typeSlash()
 <span class="skw">type</span>(<span class="str">'projeto'</span>)
 typeSlash()
 <span class="skw">type</span>(<span class="str">'sac'</span>)
+<span class="skw">type</span>(Key.DELETE)
 <span class="skw">type</span>(Key.ENTER)
 <span class="skw">sleep</span>(<span class="dig">2</span>)
 
@@ -351,20 +297,8 @@ typeSlash()
 <span class="skw">find</span>(<img src="1542065060358.png" />)
 <span class="skw">click</span>(<img src="1542065060358.png" />)
 
-<span class="skw">sleep</span>(<span class="dig">2</span>)
-<span class="skw">type</span>(Key.PRINTSCREEN)
-<span class="kw">if</span>(exists(<img src="1536795174517-3.png" />)):
-    <span class="skw">click</span>(<img src="1536795174517-3.png" />)
-<span class="kw">else</span>:
-    <span class="skw">find</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">click</span>(<img src="1538440425431-9.png" />)
-    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
-    <span class="skw">wait</span>(<img src="1537835985449-2.png" />)
-    <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC resposta'</span> + Key.ENTER)
-<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
-<span class="skw">find</span>(<img src="1537404525832-2.png" />)
-<span class="skw">click</span>(<img src="1537404525832-2.png" />)
+teste = <span class="str">'enviar RESPOSTA - DEVE apresentar mensagem de confirmacao'</span>
+word(teste)
 
 <span class="cmt"># EXCLUIR</span>
 
@@ -402,7 +336,7 @@ typeSlash()
     <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
     <span class="skw">wait</span>(<img src="1537835985449-5.png" />)
     <span class="skw">type</span>(Key.ENTER)
-<span class="skw">type</span>(<span class="str">'SAC excluir'</span> + Key.ENTER)
+<span class="skw">type</span>(<span class="str">'SAC excluir  - DEVE apresentar mensagem de confirmacao'</span> + Key.ENTER)
 <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
 
 <span class="skw">find</span>(<img src="1538229390137.png" />)

@@ -37,20 +37,23 @@ type('Problemas.')
 find("1533776396884.png")
 click("1533776396884.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-1.png")):
-    click("1536795174517-1.png")
-else:
-    find("1538440425431-7.png")
-    click("1538440425431-7.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449.png")
-    type(Key.ENTER)  
-type('SAC padrao' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832.png")
-click("1537404525832.png")
+teste = 'padrao'
+def word(teste):
+    sleep(2)
+    type(Key.PRINTSCREEN)
+    if(exists("1536795174517-1.png")):
+        click("1536795174517-1.png")
+    else:
+        find("1538440425431-7.png")
+        click("1538440425431-7.png")
+        type('word' + Key.ENTER)
+        wait("1537835985449.png")
+        type(Key.ENTER)  
+    type('SAC '+ teste + Key.ENTER)
+    type('v', KEY_CTRL)
+    find("1537404525832.png")
+    click("1537404525832.png")
+word(teste)
 
 # TITULO
 
@@ -71,20 +74,8 @@ type('Problemas.')
 find("1533776396884-1.png")
 click("1533776396884-1.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-2.png")):
-    click("1536795174517-2.png")
-else:
-    find("1538440425431-8.png")
-    click("1538440425431-8.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449-1.png")
-    type(Key.ENTER)  
-type('SAC titulo' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832-1.png")
-click("1537404525832-1.png")
+teste = 'caractere especial no campo TITULO DE RECLAMACAO - DEVE apresentar mensagem de erro'
+word(teste)
 
 # PROBLEMA
 
@@ -105,20 +96,8 @@ type(',' + Key.SHIFT + 'script')
 find("1533776396884-2.png")
 click("1533776396884-2.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-3.png")):
-    click("1536795174517-3.png")
-else:
-    find("1538440425431-9.png")
-    click("1538440425431-9.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449-2.png")
-    type(Key.ENTER)  
-type('SAC problema' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832-2.png")
-click("1537404525832-2.png")
+teste = 'caractere especial no campo PROBLEMA - DEVE apresentar mensagem de erro'
+word(teste)
 
 # CANCELAR
 
@@ -139,20 +118,8 @@ type('Problemas.')
 find("1534201439407.png")
 click("1534201439407.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-4.png")):
-    click("1536795174517-4.png")
-else:
-    find("1538440425431-10.png")
-    click("1538440425431-10.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449-3.png")
-    type(Key.ENTER)  
-type('SAC cancelar' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832-3.png")
-click("1537404525832-3.png")
+teste = 'cancelar - DEVE retornar para a tela de SAC'
+word(teste)
 
 # NOVO CADASTRO
 
@@ -171,26 +138,15 @@ typeSlash()
 type('projeto')
 typeSlash()
 type('sac')
+type(Key.DELETE)
 type(Key.ENTER)
 sleep(2)
 
 find("1534201551167.png")
 click("1534201551167.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-5.png")):
-    click("1536795174517-5.png")
-else:
-    find("1538440425431-11.png")
-    click("1538440425431-11.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449-4.png")
-    type(Key.ENTER)  
-type('SAC novo cadastro' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832-4.png")
-click("1537404525832-4.png")
+teste = 'botao novo cadastro'
+word(teste)
 
 # ATUALIZAR
 
@@ -209,6 +165,7 @@ typeSlash()
 type('projeto')
 typeSlash()
 type('sac')
+type(Key.DELETE)
 type(Key.ENTER)
 sleep(2)
 
@@ -232,20 +189,8 @@ click("1542063761540.png")
 find("1534203719624.png")
 click("1534203719624.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-3.png")):
-    click("1536795174517-3.png")
-else:
-    find("1538440425431-9.png")
-    click("1538440425431-9.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449-2.png")
-    type(Key.ENTER)  
-type('SAC atualizar' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832-2.png")
-click("1537404525832-2.png")
+teste = 'atualizar cadastro - DEVE apresentar mensagem de confirmacao'
+word(teste)
 
 # RESPOSTA
 
@@ -264,6 +209,7 @@ typeSlash()
 type('projeto')
 typeSlash()
 type('sac')
+type(Key.DELETE)
 type(Key.ENTER)
 sleep(2)
 
@@ -279,20 +225,8 @@ click("1542065040392.png")
 find("1542065060358.png")
 click("1542065060358.png")
 
-sleep(2)
-type(Key.PRINTSCREEN)
-if(exists("1536795174517-3.png")):
-    click("1536795174517-3.png")
-else:
-    find("1538440425431-9.png")
-    click("1538440425431-9.png")
-    type('word' + Key.ENTER)
-    wait("1537835985449-2.png")
-    type(Key.ENTER)  
-type('SAC resposta' + Key.ENTER)
-type('v', KEY_CTRL)
-find("1537404525832-2.png")
-click("1537404525832-2.png")
+teste = 'enviar RESPOSTA - DEVE apresentar mensagem de confirmacao'
+word(teste)
 
 # EXCLUIR
 
@@ -330,7 +264,7 @@ else:
     type('word' + Key.ENTER)
     wait("1537835985449-5.png")
     type(Key.ENTER)  
-type('SAC excluir' + Key.ENTER)
+type('SAC excluir  - DEVE apresentar mensagem de confirmacao' + Key.ENTER)
 type('v', KEY_CTRL)
 
 find("1538229390137.png")

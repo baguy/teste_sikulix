@@ -157,7 +157,7 @@ type(Key.DOWN + Key.ENTER)
 find("1539220474860.png")
 click("1539220474860.png")
  
-teste = 'letras inseridas no campo VAL - DEVE apresentar mensagem de erroOR'
+teste = 'letras inseridas no campo VALOR - DEVE apresentar mensagem de erro'
 word(teste)
 
 

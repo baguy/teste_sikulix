@@ -123,7 +123,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-1.png")
 click("1533776396884-1.png")
 
-teste = "codigo"
+teste = "inserir letras e numeros em CODIGO DO PRODUTO - DEVE permitir"
 word(teste)
 
 # DATA DE FABRICAÇÃO
@@ -152,7 +152,7 @@ type('531826')
 
 find("1534813840608-2.png")
 click("1534813840608-2.png")
-type('11112022')
+type('11112042')
 
 find("1534813833622-2.png")
 click("1534813833622-2.png")
@@ -169,7 +169,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-2.png")
 click("1533776396884-2.png")
 
-teste = "data de fabricacao"
+teste = "DATA DE FABRICACAO impossivel no futuro - DEVE apresentar mensagem de erro"
 word(teste)
 
 # DATA DE RECEBIMENTO
@@ -215,7 +215,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-3.png")
 click("1533776396884-3.png")
 
-teste = "data de recebimento"
+teste = "DATA DE RECEBIMENTO impossivel no passado - DEVE apresentar mensagem de erro"
 word(teste)
 
 # DATAS
@@ -261,7 +261,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-4.png")
 click("1533776396884-4.png")
 
-teste = "datas impossiveis"
+teste = "DATAS impossiveis - DEVE apresentar mensagem de erro"
 word(teste)
 
 # DATA DE VALIDADE
@@ -307,7 +307,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-5.png")
 click("1533776396884-5.png")
 
-teste = "data de validade"
+teste = "DATA DE VALIDADE vencida - DEVE apresentar mensagem de erro"
 word(teste)
 
 # FORNECEDOR
@@ -349,7 +349,7 @@ type('06062018')
 find("1533776396884-6.png")
 click("1533776396884-6.png")
 
-teste = "fornecedor"
+teste = "nao selecionar FORNECEDOR - DEVE apresentar mensagem de erro"
 word(teste)
 
 # LOTE
@@ -395,7 +395,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-7.png")
 click("1533776396884-7.png")
 
-teste = "lote"
+teste = "letras inseridas no campo LOTE - DEVE apresentar mensagem de erro"
 word(teste)
 
 # NOME
@@ -441,7 +441,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-8.png")
 click("1533776396884-8.png")
 
-teste = "nome"
+teste = "numeros inseridos no campo NOME - DEVE apresentar mensagem de erro"
 word(teste)
 
 # VALOR
@@ -487,7 +487,7 @@ type(Key.DOWN + Key.ENTER)
 find("1533776396884-9.png")
 click("1533776396884-9.png")
 
-teste = "valor"
+teste = "inserir zero no campo VALOR DO PRODUTO - DEVE apresentar mensagem de erro"
 word(teste)
 
 # CANCELAR

@@ -73,7 +73,7 @@ type(',', Key.SHIFT)
 find("1536800656068-1.png")
 click("1536800656068-1.png")
 
-teste = 'descricao com caracteres especiais'
+teste = 'caracteres especiais no campo DESCRICAO - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -94,7 +94,7 @@ type('Nao digitar acentos eh ilogico.')
 find("1536800656068-2.png")
 click("1536800656068-2.png")
 
-teste = 'email'
+teste = 'email invalido - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -115,7 +115,7 @@ type('Nao digitar acentos eh ilogico.')
 find("1536800656068-3.png")
 click("1536800656068-3.png")
 
-teste = 'nome com numeros'
+teste = 'numeros no campo NOME - DEVE apresentar mensagem de erro'
 word(teste)
 
 
@@ -136,7 +136,7 @@ type('Nao digitar acentos eh ilogico.')
 find("1536800656068-3.png")
 click("1536800656068-3.png")
 
-teste = 'nome com caracteres especiais'
+teste = 'caracteres especiais no campo NOME - DEVE apresentar mensagem de erro'
 word(teste)
 
 
