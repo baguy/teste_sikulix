@@ -70,8 +70,7 @@
 <h2>CARGO.sikuli</h2> <a href="CARGO.zip">(Download this script)</a>
 </div>
 <pre class="sikuli-code">
-<span class="cmt"># NOVO CADASTRO</span>
-
+<span class="cmt"># PADRAO</span>
 
 <span class="kw">def</span> endereco():
     <span class="kw">if</span>(exists(<img src="1537836711054-8.png" />)):
@@ -89,9 +88,185 @@
     <span class="skw">type</span>(<span class="str">'projeto'</span>)
     typeSlash()
     <span class="skw">type</span>(<span class="str">'cargo'</span>)
+    typeSlash()
+    <span class="skw">type</span>(<span class="str">'cadastrar'</span>)
     <span class="skw">type</span>(Key.ENTER)
-    <span class="skw">type</span>(Key.DELETE)
     <span class="skw">sleep</span>(<span class="dig">2</span>)
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="skw">find</span>(<img src="1534202469651.png" />)
+<span class="skw">click</span>(<img src="1534202469651.png" />)
+<span class="skw">type</span>(<span class="str">'Cantor'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'40'</span>)
+<span class="skw">find</span>(<img src="1534202482581.png" />)
+<span class="skw">click</span>(<img src="1534202482581.png" />)
+<span class="skw">type</span>(<span class="str">'cantar'</span>)
+<span class="skw">find</span>(<img src="1538440545781.png" />)
+<span class="skw">click</span>(<img src="1538440545781.png" />)
+<span class="skw">type</span>(<span class="str">'1253'</span>)
+<span class="skw">find</span>(<img src="1533776396884.png" />)
+<span class="skw">click</span>(<img src="1533776396884.png" />)
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+<span class="skw">type</span>(Key.PRINTSCREEN)
+<span class="kw">if</span>(exists(<img src="1536795174517-1.png" />)):
+    <span class="skw">click</span>(<img src="1536795174517-1.png" />)
+<span class="kw">else</span>:
+    <span class="skw">find</span>(<img src="1538440425431.png" />)
+    <span class="skw">click</span>(<img src="1538440425431.png" />)
+    <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+    <span class="skw">wait</span>(<img src="1537835985449.png" />)
+    <span class="skw">type</span>(Key.ENTER)
+<span class="skw">type</span>(<span class="str">'Cargo padrao'</span> + Key.ENTER)
+<span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+<span class="skw">find</span>(<img src="1537404525832.png" />)
+<span class="skw">click</span>(<img src="1537404525832.png" />)
+
+<span class="cmt"># CARGA HORÁRIA</span>
+
+endereco()
+
+<span class="skw">sleep</span>(<span class="dig">2</span>)
+
+<span class="skw">find</span>(<img src="1534202469651.png" />)
+<span class="skw">click</span>(<img src="1534202469651.png" />)
+<span class="skw">type</span>(<span class="str">'Cantor'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'0'</span>)
+<span class="skw">find</span>(<img src="1534202482581.png" />)
+<span class="skw">click</span>(<img src="1534202482581.png" />)
+<span class="skw">type</span>(<span class="str">'cantar'</span>)
+<span class="skw">find</span>(<img src="1538440545781.png" />)
+<span class="skw">click</span>(<img src="1538440545781.png" />)
+<span class="skw">type</span>(<span class="str">'1253'</span>)
+<span class="skw">find</span>(<img src="1533776396884.png" />)
+<span class="skw">click</span>(<img src="1533776396884.png" />)
+
+<span class="kw">def</span> word(teste):
+    <span class="skw">sleep</span>(<span class="dig">2</span>)
+    <span class="skw">type</span>(Key.PRINTSCREEN)
+    <span class="kw">if</span>(exists(<img src="1536795174517-8.png" />)):
+        <span class="skw">click</span>(<img src="1536795174517-8.png" />)
+    <span class="kw">else</span>:
+        <span class="skw">find</span>(<img src="1538440425431-1.png" />)
+        <span class="skw">click</span>(<img src="1538440425431-1.png" />)
+        <span class="skw">type</span>(<span class="str">'word'</span> + Key.ENTER)
+        <span class="skw">sleep</span>(<span class="dig">2</span>)
+        <span class="skw">wait</span>(<img src="1537835985449-7.png" />)
+        <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'cargo '</span>+ teste + Key.ENTER)
+    <span class="skw">type</span>(<span class="str">'v'</span>, KEY_CTRL)
+    <span class="skw">find</span>(<img src="1537404525832-6.png" />)
+    <span class="skw">click</span>(<img src="1537404525832-6.png" />)
+
+teste = <span class="str">'carga horaria com zero - DEVE mostrar mensagem de erro'</span>
+word(teste)
+
+
+<span class="cmt"># DESCRICAO</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1534202469651-1.png" />)
+<span class="skw">click</span>(<img src="1534202469651-1.png" />)
+<span class="skw">type</span>(<span class="str">'Cantor'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'40'</span>)
+<span class="skw">find</span>(<img src="1534202482581-1.png" />)
+<span class="skw">click</span>(<img src="1534202482581-1.png" />)
+<span class="skw">type</span>(<span class="str">'.'</span>, Key.SHIFT)
+<span class="skw">find</span>(<img src="1538440545781.png" />)
+<span class="skw">click</span>(<img src="1538440545781.png" />)
+<span class="skw">type</span>(<span class="str">'1253'</span>)
+
+<span class="skw">find</span>(<img src="1533776396884-1.png" />)
+<span class="skw">click</span>(<img src="1533776396884-1.png" />)
+
+teste = <span class="str">'caractere especial inserido no campo DESCRICAO - DEVE mostrar mensagem de erro'</span>
+word(teste)
+
+
+<span class="cmt"># NOME</span>
+
+
+endereco()
+
+
+<span class="skw">find</span>(<img src="1534202469651-2.png" />)
+<span class="skw">click</span>(<img src="1534202469651-2.png" />)
+<span class="skw">type</span>(<span class="str">'789'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'55'</span>)
+<span class="skw">find</span>(<img src="1534202482581-2.png" />)
+<span class="skw">click</span>(<img src="1534202482581-2.png" />)
+<span class="skw">type</span>(<span class="str">'cantar 1,2,3...'</span>)
+<span class="skw">find</span>(<img src="1538440545781.png" />)
+<span class="skw">click</span>(<img src="1538440545781.png" />)
+<span class="skw">type</span>(<span class="str">'1253'</span>)
+
+<span class="skw">find</span>(<img src="1533776396884-2.png" />)
+<span class="skw">click</span>(<img src="1533776396884-2.png" />)
+
+teste = <span class="str">'numeros no campo NOME - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+
+<span class="cmt"># VALOR</span>
+
+
+endereco()
+
+
+<span class="skw">find</span>(<img src="1534202469651-3.png" />)
+<span class="skw">click</span>(<img src="1534202469651-3.png" />)
+<span class="skw">type</span>(<span class="str">'Cantor'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'55'</span>)
+<span class="skw">find</span>(<img src="1534202482581-3.png" />)
+<span class="skw">click</span>(<img src="1534202482581-3.png" />)
+<span class="skw">type</span>(<span class="str">'cantar'</span>)
+<span class="skw">find</span>(<img src="1538440545781.png" />)
+<span class="skw">click</span>(<img src="1538440545781.png" />)
+<span class="skw">type</span>(<span class="str">'0'</span>)
+
+<span class="skw">find</span>(<img src="1533776396884-3.png" />)
+<span class="skw">click</span>(<img src="1533776396884-3.png" />)
+
+teste = <span class="str">'valor zero no campo SALARIO - DEVE apresentar mensagem de erro'</span>
+word(teste)
+
+
+<span class="cmt"># CANCELAR</span>
+
+
+endereco()
+
+<span class="skw">find</span>(<img src="1534202469651-4.png" />)
+<span class="skw">click</span>(<img src="1534202469651-4.png" />)
+<span class="skw">type</span>(<span class="str">'Cantor'</span>)
+<span class="skw">type</span>(Key.TAB)
+<span class="skw">type</span>(<span class="str">'40'</span>)
+<span class="skw">find</span>(<img src="1534202482581-4.png" />)
+<span class="skw">click</span>(<img src="1534202482581-4.png" />)
+<span class="skw">type</span>(<span class="str">'cantar'</span>)
+<span class="skw">find</span>(<img src="1538440545781.png" />)
+<span class="skw">click</span>(<img src="1538440545781.png" />)
+<span class="skw">type</span>(<span class="str">'1253'</span>)
+
+<span class="skw">find</span>(<img src="1534201439407.png" />)
+<span class="skw">click</span>(<img src="1534201439407.png" />)
+
+teste = <span class="str">'cancelar'</span>
+word(teste)
+
+
+<span class="cmt"># NOVO CADASTRO</span>
+
 
 endereco()
 

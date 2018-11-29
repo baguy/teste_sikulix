@@ -1,6 +1,4 @@
-
-# NOVO CADASTRO
-
+# PADRAO
 
 def endereco():
     if(exists("1537836711054-8.png")):
@@ -18,9 +16,185 @@ def endereco():
     type('projeto')
     typeSlash()
     type('cargo')
+    typeSlash()
+    type('cadastrar')
     type(Key.ENTER)
-    type(Key.DELETE)
     sleep(2)
+
+endereco()
+
+sleep(2)
+
+find("1534202469651.png")
+click("1534202469651.png")
+type('Cantor')
+type(Key.TAB)
+type('40')
+find("1534202482581.png")
+click("1534202482581.png")
+type('cantar')
+find("1538440545781.png")
+click("1538440545781.png")
+type('1253')
+find("1533776396884.png")
+click("1533776396884.png")
+
+sleep(2)
+type(Key.PRINTSCREEN)
+if(exists("1536795174517-1.png")):
+    click("1536795174517-1.png")
+else:
+    find("1538440425431.png")
+    click("1538440425431.png")
+    type('word' + Key.ENTER)
+    wait("1537835985449.png")
+    type(Key.ENTER)  
+type('Cargo padrao' + Key.ENTER)
+type('v', KEY_CTRL)
+find("1537404525832.png")
+click("1537404525832.png")
+
+# CARGA HORÁRIA
+
+endereco()
+
+sleep(2)
+
+find("1534202469651.png")
+click("1534202469651.png")
+type('Cantor')
+type(Key.TAB)
+type('0')
+find("1534202482581.png")
+click("1534202482581.png")
+type('cantar')
+find("1538440545781.png")
+click("1538440545781.png")
+type('1253')
+find("1533776396884.png")
+click("1533776396884.png")
+
+def word(teste):
+    sleep(2)
+    type(Key.PRINTSCREEN)
+    if(exists("1536795174517-8.png")):
+        click("1536795174517-8.png")
+    else:
+        find("1538440425431-1.png")
+        click("1538440425431-1.png")
+        type('word' + Key.ENTER)
+        sleep(2)
+        wait("1537835985449-7.png")
+        type(Key.ENTER)    
+    type('cargo '+ teste + Key.ENTER)
+    type('v', KEY_CTRL)
+    find("1537404525832-6.png")
+    click("1537404525832-6.png")
+
+teste = 'carga horaria com zero - DEVE mostrar mensagem de erro'
+word(teste)
+
+
+# DESCRICAO
+
+
+endereco()
+
+find("1534202469651-1.png")
+click("1534202469651-1.png")
+type('Cantor')
+type(Key.TAB)
+type('40')
+find("1534202482581-1.png")
+click("1534202482581-1.png")
+type('.', Key.SHIFT)
+find("1538440545781.png")
+click("1538440545781.png")
+type('1253')
+
+find("1533776396884-1.png")
+click("1533776396884-1.png")
+
+teste = 'caractere especial inserido no campo DESCRICAO - DEVE mostrar mensagem de erro'
+word(teste)
+
+
+# NOME
+
+
+endereco()
+
+
+find("1534202469651-2.png")
+click("1534202469651-2.png")
+type('789')
+type(Key.TAB)
+type('55')
+find("1534202482581-2.png")
+click("1534202482581-2.png")
+type('cantar 1,2,3...')
+find("1538440545781.png")
+click("1538440545781.png")
+type('1253')
+
+find("1533776396884-2.png")
+click("1533776396884-2.png")
+
+teste = 'numeros no campo NOME - DEVE apresentar mensagem de erro'
+word(teste)
+
+
+# VALOR
+
+
+endereco()
+
+
+find("1534202469651-3.png")
+click("1534202469651-3.png")
+type('Cantor')
+type(Key.TAB)
+type('55')
+find("1534202482581-3.png")
+click("1534202482581-3.png")
+type('cantar')
+find("1538440545781.png")
+click("1538440545781.png")
+type('0')
+
+find("1533776396884-3.png")
+click("1533776396884-3.png")
+
+teste = 'valor zero no campo SALARIO - DEVE apresentar mensagem de erro'
+word(teste)
+
+
+# CANCELAR
+
+
+endereco()
+
+find("1534202469651-4.png")
+click("1534202469651-4.png")
+type('Cantor')
+type(Key.TAB)
+type('40')
+find("1534202482581-4.png")
+click("1534202482581-4.png")
+type('cantar')
+find("1538440545781.png")
+click("1538440545781.png")
+type('1253')
+
+find("1534201439407.png")
+click("1534201439407.png")
+
+teste = 'cancelar'
+word(teste)
+
+
+# NOVO CADASTRO
+
 
 endereco()
 
