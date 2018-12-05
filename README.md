@@ -20,7 +20,7 @@ Certifique-se de que a pasta do projeto esteja na pasta htdocs do servidor local
 ## Passo 02 - Login
 - Acesse o projeto localmente digitando na barra de endereço do navegador: localhost/projeto
 - Depois, clique em "Login"
-- Em seguida, insira e-mail e senha.
+- Em seguida, insira e-mail e senha. Preferencialmente, logar como administrador do sistema para ter acesso a todos os formulários.
   - Login padrão:
   - e-mail: admin@admin.com
   - senha: admin
