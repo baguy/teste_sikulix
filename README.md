@@ -11,7 +11,7 @@
 - Passo 03 - Sikulix
 - Passo 04 - Abrir testes
 - Passo 05 - Executar testes
--
+- Passo 06 - Relatórios
 - Observações
 
 ## Passo 01 - Iniciando o projeto
