@@ -46,3 +46,4 @@ A cada término de rotina do teste, será gerado um relatório em documento Word
 - O teste foi configurado para rodar no navegador Chrome, pois o Sikulix busca o símbolo de nova aba e barra de endereço do navegador para abrir a página do projeto. Caso seja necessário rodar em outro navegador, configurar apropriadamente em todos os testes.
 - Atentar-se para a resolução da tela em que o teste será rodado. Mais detalhes no [tutorial](https://github.com/baguy/Tutorial_Sikuli/blob/master/tutorial_sikulix.md).
 - Caso as rotas do projeto sejam mudadas, atentar-se para mudá-las nas funções endereço() em cada rotina de teste.
+- O computador deve ter memória livre suficiente para o teste rodar normalmente. Caso contrário, o programa poderá fechar ou apresentar erro.
